@@ -2,7 +2,7 @@
 
 
 function CREATOR () {
-console.log("from ITI STUSEND , CREATED BY  mohamed awaad and khaled RAM and and thanks awaad AND TANKS ITI " );
+console.log("From ITI STUSEND, the BY 💚💛 Mohamed Awaad and 🆗 Khaled Ram, thank you Awaad and thank ITI " );
  var x="dfdf"
  return x
 }
