@@ -19,6 +19,8 @@ console.log("ItiGetcookey ()");
  
 }
 CREATOR ()
+
+
 function ItiSetcookie(key,value,exdate) {
     var date= new Date(exdate);
     document.cookie= key+"="+value+";expires="+date+";";
