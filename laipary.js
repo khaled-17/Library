@@ -3,8 +3,12 @@
 
 function CREATOR () {
 console.log("From ITI STUSEND, the BY 💚💛 Mohamed Awaad and 🆗 Khaled Ram, thank you Awaad and thank ITI " );
- var x="dfdf"
- return x
+ 
+}
+function version ( ) {
+    console.log("version number: 00,1  "  );
+    console.log("version nickname: a.salah  "  );
+    
 }
 
 function ItiAllMetiod(){
