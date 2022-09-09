@@ -1,98 +1,90 @@
 // document.cookie="name=khale";
 
 
-function CREATOR () {
-console.log("From ITI STUSEND, the BY 💚💛 Mohamed Awaad and 🆗 Khaled Ram, thank you Awaad and thank ITI " );
- 
+function ITICREATOR() {
+    console.log("From ITI STUSEND, the BY 💚💛 Mohamed Awaad and 🆗 Khaled Ram, thank you Awaad and thank ITI ");
+console.log("===========");
+console.log("===========");
+console.log("TO SEE👁‍🗨 ALL function  ItiAllMetiod() ");
 }
-function version ( ) {
-    console.log("version number: 00,1  "  );
-    console.log("version nickname: a.salah  "  );
-    
+function version() {
+    console.log("version number: 00,1  ");
+    console.log("version nickname: a.salah  ");
+
 }
 
-function ItiAllMetiod(){
-console.log("CREATOR ()");
-console.log("ItiAllCookiy ()");
-console.log("ItiDeletAllCookiy ()");
-console.log("ItiGetcookey ()");
- 
+function ItiAllMetiod() {
+    console.log("ITICREATOR()");
+    console.log("CREATOR()");
+    console.log("ItiAllCookiy()");
+    console.log("ItiDeletAllCookiy()");
+    console.log("ItiGetcookey()");
+    console.log("AND ItiGetcookey/ItiDelet/ItiSerch()");
+
 }
-CREATOR ()
-
-
-function ItiSetcookie(key,value,exdate) {
-    var date= new Date(exdate);
-    document.cookie= key+"="+value+";expires="+date+";";
+ITICREATOR()
+function ItiSetcookie(key, value, exdate) {
+    var date = new Date(exdate);
+    document.cookie = key + "=" + value + ";expires=" + date + ";";
 }
 // setcookie("color","fdf","2022-10-20")
-
-
-
-function ItiAllCookiy( ) {
+function ItiAllCookiy() {
 
     var cookie = document.cookie.split(";");
     var cookieArray = [];
-  
+
     for (const i of cookie) {
-      var x = i.split("=");
-      cookieArray[x[0].trim()] = x[1];
+        var x = i.split("=");
+        cookieArray[x[0].trim()] = x[1];
     }
 
-    return cookieArray    
+    return cookieArray
 }
 
+function ItiDeletAllCookiy() {
 
 
-function ItiDeletAllCookiy( ) {
-
-  
     for (const i of cookie) {
-      var x = i.split("=");
-      allco=cookieArray[x[0].trim()] = x[0]
-console.log(  document.cookie= allco+"=;expires=") }
+        var x = i.split("=");
+        allco = cookieArray[x[0].trim()] = x[0]
+        console.log(document.cookie = allco + "=;expires=")
+    }
 
-    return cookieArray    
+    return cookieArray
 }
 
+///////////
 
- 
-
-
-
- 
- ///////////
- 
 // for (const key in allCookiy()) {
 //     console.log(key);
 //     console.log(allCookiy()[key]);
 
-    
+
 // }
 
 function ItiSerch(item) {
-   return allCookiy().hasOwnProperty(item)
-        
+    return allCookiy().hasOwnProperty(item)
+
+}
+
+function ItiDelet(delitem) {
+
+    if (serch(delitem)) {
+        document.cookie = delitem + "=;expires=;";
+
+    } else {
+        throw (" its not fond")
+
     }
 
-    function ItiDelet(delitem) {
+}
 
-        if (serch(delitem)) {
-            document.cookie= delitem+"=;expires=;";
-            
-        } else {
-                throw(" its not fond")
+function ItiGetcookey(key) {
+    if (serch(key)) {
+        return allCookiy()[key]
 
-        }
-        
+    } else {
+        throw (" not  fond key")
     }
+}
 
-    function ItiGetcookey(key) {
-            if (serch(key) ) {
-                return  allCookiy()[key]
-
-            } else {
-                throw(" not  fond key")
-            }
-         }
-     
